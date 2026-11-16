@@ -29,4 +29,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.organization=unimibsoftengcourse2022 -Dsonar.projectKey=UnimibSoftEngCourse2022_ingegneria-del-software-action-sonarcloud-exercise-il-gutto
+        run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.host.url=https://sonarcloud.io -Dsonar.organization=unimibsoftengcourse2022 -Dsonar.projectKey=UnimibSoftEngCourse2022_ingegneria-del-software-action-sonarcloud-exercise-il-gutto
